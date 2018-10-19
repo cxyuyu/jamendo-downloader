@@ -48,8 +48,8 @@ def get_(channel_num= {'emotional': 0, 'dance': 0, 'chillout': 0, 'ambient': 0, 
         ids=ids[channel_num[channelname]:]
         channel_ids[channelname]=ids
     print(channel_ids)
-    # for key in channel_ids:
-    #     save_music(key, channel_ids[key])
+    for key in channel_ids:
+        save_music(key, channel_ids[key])
 
 
 def save_music(path, ids):
